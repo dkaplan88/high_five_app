@@ -1,0 +1,8 @@
+<h1><%= @story.name %></h1>
+<h2><%= @story.location %></h2>
+<p><%= @story.story %></p>
+<% @story.photos.each do |photo| %>
+<p><%= photo.name %></p>
+<p><%= photo.location %></p>
+<p><%= photo.photo %></p>
+<% end %>

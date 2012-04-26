@@ -1,0 +1,12 @@
+<p><%= notice %></p>
+<ul>	
+	<li>
+		<% @stories.each do |story| %>
+			<ul>
+				<li>Name: <%= story.name %></li>
+				<li>Location: <%= story.location %></li>
+				<li>Story: <%= story.story %></li>
+			</ul>		
+		<% end %>
+	</li>
+</ul>
