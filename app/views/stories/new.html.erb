@@ -1,9 +1,10 @@
+<h1> Share Your Story! </h1>
 <%= form_for @story, :url => { :action => "create" }  do |f| %>
- <%= f.label :name %>
- <%= f.text_field :name %>
- <%= f.label :location %>
-  <%= f.text_field :location %>
-  <%= f.label :story %>
-  <%= f.text_area :story, :size => "60x12" %>
-  <%= f.submit "Create" %>
+<p><%= f.label :name %>:</p> 
+<p> <%= f.text_field :name %> </p>
+<p><%= f.label :location %>:</p>
+<p><%= f.text_field :location %></p>
+<p><%= f.label :story %>:</p>
+<p><%= f.text_area :story, :size => "60x12" %></p>
+<p><%= f.submit "Submit Your Story" %></p>
 <% end %>

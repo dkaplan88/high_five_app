@@ -14,7 +14,7 @@ class StoriesController < ApplicationController
   def create
     @story = Story.new(params[:story])
    if @story.save
-      redirect_to "/stories", :notice => "OK!"
+      redirect_to "/stories", :notice => "Story Successfully Shared!"
     else
       render :action => "new"
     end
