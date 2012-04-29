@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/nathancolgate/s3-swf-upload-plugin
+  revision: 76f36fa49f60cf5ac33aa0959c4a33cbc3ee0290
+  specs:
+    s3_swf_upload (0.3.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -120,6 +126,7 @@ DEPENDENCIES
   jquery-rails
   paperclip
   rails (= 3.2.3)
+  s3_swf_upload!
   sass-rails (~> 3.2.3)
   sqlite3
   uglifier (>= 1.0.3)

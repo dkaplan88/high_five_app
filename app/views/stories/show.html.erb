@@ -1,8 +1,17 @@
-<h1><%= @story.name %></h1>
-<h2><%= @story.location %></h2>
-<p><%= @story.story %></p>
-<% @story.photos.each do |photo| %>
+<body>
+	<header>
+<h1>The High Five Project </h1>
+	<ul class="header">
+		<li class ="header"><a href="/">About the Movement</a></li> 
+		<li class ="header" ><a href="/history">History of the High Five</a></li> 
+		<li class="header"><a href="/pictures">Pictures of the Movement</a></li>		
+	</ul>
+	</header>
+
+<h2 class="about"><%= @story.name %> - <%= @story.location %></h2>
+<p class="about"><%= @story.story %></p>
+<!-- <% @story.photos.each do |photo| %>
 <p><%= photo.name %></p>
 <p><%= photo.location %></p>
 <p><%= photo.photo %></p>
-<% end %>
+<% end %> -->

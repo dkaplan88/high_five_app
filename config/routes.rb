@@ -1,4 +1,6 @@
 HighFiveApp::Application.routes.draw do
+  resources :s3_uploads
+
   get "/", :controller => "highfive", :action => "index"
   
   get "/history", :controller => "highfive", :action => "history"

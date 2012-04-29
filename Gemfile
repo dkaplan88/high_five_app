@@ -8,6 +8,8 @@ gem 'rails', '3.2.3'
 gem 'sqlite3'
 gem 'paperclip'
 gem 'aws-s3'
+gem 's3_swf_upload', :git => 'git://github.com/nathancolgate/s3-swf-upload-plugin'
+
 
 
 # Gems used only for assets and not required
