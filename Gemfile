@@ -15,7 +15,9 @@ gem 'carrierwave'
 gem 'rmagick'
 # gem 'thumbs_up'
 # gem "nifty-generators", :group => :development
-
+group :production do
+  gem 'pg'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
