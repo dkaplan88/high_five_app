@@ -1,0 +1,12 @@
+<div class="new">
+	<%= form_for @photo, :url => { :action => "create" }  do |f| %>
+		<p><%= f.label :name %>:</p> 
+		<p> <%= f.text_field :name %> </p>
+		<p><%= f.label :location %>:</p>
+		<p><%= f.text_field :location %></p>
+		<p><%= f.file_field :image %></p>
+		<p><%= f.label :remote_image_url, "or image URL:" %></br>
+		   <%= f.text_field :remote_image_url  %></p>
+		<p><%= f.submit "Submit Your Photo" %></p>
+	<% end %>
+</div class ="new">

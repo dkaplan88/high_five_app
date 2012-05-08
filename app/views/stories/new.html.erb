@@ -1,18 +1,11 @@
-<header>
-	<ul class="header">
-		<li class ="header"><a href="/">About the Movement</a></li> 
-		<li class ="header" ><a href="/history">History of the High Five</a></li> 
-		<li class ="header" ><a href="/stories">Stories of the Movement</a></li> 
-		<li class="header"><a href="/pictures">Pictures of the Movement</a></li>
-	</ul></header>
-<body class="new">
-<%= form_for @story, :url => { :action => "create" }  do |f| %>
-<p><%= f.label :name %>:</p> 
-<p> <%= f.text_field :name %> </p>
-<p><%= f.label :location %>:</p>
-<p><%= f.text_field :location %></p>
-<p><%= f.label :story %>:</p>
-<p><%= f.text_area :story, :size => "60x12" %></p>
-<p><%= f.submit "Submit Your Story" %></p>
-<% end %>
-</body>
+<div class="new">
+	<%= form_for @story, :url => { :action => "create" }  do |f| %>
+		<p><%= f.label :name %>:</p> 
+		<p> <%= f.text_field :name %> </p>
+		<p><%= f.label :location %>:</p>
+		<p><%= f.text_field :location %></p>
+		<p><%= f.label :story %>:</p>
+		<p><%= f.text_area :story, :size => "60x12" %></p>
+		<p><%= f.submit "Submit Your Story" %></p>
+	<% end %>
+</div>

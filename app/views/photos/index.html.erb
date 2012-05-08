@@ -1,0 +1,7 @@
+<h2 class="about"><a style="color:red" 	href="/photos/new">Click to Add a Photo</a></h2>
+
+	<% @photos.each do |photo| %>	
+		<a class="about" href="/photos/<%=photo.id%>">
+		<p class="about"><%= photo.name %> : <%= photo.location %></p></a>
+		<p class="about"><%= image_tag photo.image_url(:thumb).to_s %> </br> <%=format_date(photo.created_at) %></p>
+	<%end%>
