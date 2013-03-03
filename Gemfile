@@ -12,6 +12,7 @@ gem 'foreman'
 gem "therubyracer"
 gem "less-rails"
 gem 'twitter-bootstrap-rails'
+gem 'haml'
 
 group :production do
   gem 'pg'

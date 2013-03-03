@@ -67,6 +67,7 @@ GEM
     foreman (0.61.0)
       thor (>= 0.13.6)
     formatador (0.2.2)
+    haml (3.1.8)
     hike (1.2.1)
     httparty (0.8.3)
       multi_json (~> 1.0)
@@ -168,6 +169,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   fog
   foreman
+  haml
   jquery-rails (>= 1.0.12)
   less-rails
   mocha
