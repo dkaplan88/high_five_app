@@ -9,6 +9,8 @@ end
 gem 'carrierwave'
 gem 'rmagick'
 gem 'foreman'
+gem "therubyracer"
+gem "less-rails"
 gem 'twitter-bootstrap-rails'
 
 group :production do
